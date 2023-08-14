@@ -1,0 +1,16 @@
+POST http://localhost:3001/api/notes
+Content-Type: application/json
+
+{
+   "content": "Esta nueva nota fue creada desde create_note.rest",
+   "important": true
+}
+
+###
+// Probamos una nota sin contenido para dar error
+POST http://localhost:3001/api/notes
+Content-Type: application/json
+
+{
+
+}
